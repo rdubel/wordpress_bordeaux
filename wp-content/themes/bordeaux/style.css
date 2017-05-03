@@ -38,4 +38,10 @@ Text Domain:  wellington-child
     font-size: 1.2em;
     font-weight: bold; }
 
+.textwidget a,
+.textwidget a:link,
+.textwidget a:visited {
+  color: black;
+  left: 5; }
+
 /*# sourceMappingURL=style.css.map */
