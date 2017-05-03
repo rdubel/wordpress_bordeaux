@@ -11,7 +11,13 @@ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 Tags:         wellington child
 Text Domain:  wellington-child
 */
+.header-main {
+  display: flex;
+  align-items: flex-end;
+  padding: 1em; }
+
 #logo {
+  margin-top: 5em;
   width: 28.5em; }
   #logo .site-title {
     background: url("http://www.bordeaux.fr/blochtml/imagesbloc/log_bordeaux.png");
@@ -27,21 +33,54 @@ Text Domain:  wellington-child
   display: flex;
   justify-content: space-around;
   background-color: grey;
-  border-radius: 2px;
-  box-shadow: 1    px -2px 5px grey; }
+  border-radius: 5px;
+  box-shadow: 2px -2px 5px grey;
+  box-shadow: -2px 2px 5px black; }
   #main-navigation .custom-logo-link {
     width: 2em;
     height: 1.7em;
     margin: auto auto auto 1em; }
+  #main-navigation ul {
+    margin-left: 3em; }
   #main-navigation .main-navigation-menu a {
     padding: 0.5em 1em;
     font-size: 1.2em;
     font-weight: bold; }
 
-.textwidget a,
-.textwidget a:link,
-.textwidget a:visited {
-  color: black;
-  left: 5; }
+#nav_menu-4 {
+  float: left;
+  margin-top: 7.7em;
+  margin-right: 14em; }
+  #nav_menu-4 ul {
+    padding: 0;
+    margin: 0; }
+  #nav_menu-4 li:first-child {
+    list-style-type: none;
+    background-image: url("http://www.bordeaux.fr/blochtml/imagesbloc/quartier.png");
+    background-repeat: no-repeat;
+    background-position: -0.3em 0;
+    padding-left: 1.1em; }
+    #nav_menu-4 li:first-child a {
+      color: #343434; }
+  #nav_menu-4 li:not(:first-child) {
+    list-style-type: none;
+    background-image: url("http://www.bordeaux.fr/blochtml/imagesbloc/plan.png");
+    background-repeat: no-repeat;
+    background-position: -0.3em 0;
+    padding-left: 1.1em; }
+    #nav_menu-4 li:not(:first-child) a {
+      color: #343434; }
+
+#nav_menu-3 {
+  float: right; }
+  #nav_menu-3 ul {
+    margin-top: 5em;
+    display: flex;
+    list-style-type: none; }
+    #nav_menu-3 ul li {
+      margin: 0 0.1em;
+      padding: 0 0.2em; }
+    #nav_menu-3 ul li:not(:nth-child(3)) {
+      border-right: 1px solid #343434; }
 
 /*# sourceMappingURL=style.css.map */
