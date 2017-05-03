@@ -11,3 +11,14 @@ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 Tags:         wellington child
 Text Domain:  wellington-child
 */
+
+
+.site-branding {
+    width: 28.5em;
+    h1 {
+        background: url("http://www.bordeaux.fr/blochtml/imagesbloc/log_bordeaux.png");
+        width:100%;
+        height:1.6em;
+        // background-color: red;
+    }
+}
