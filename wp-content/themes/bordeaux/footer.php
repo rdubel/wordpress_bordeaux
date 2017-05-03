@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 	</div><!-- #content -->
 
 	<?php do_action( 'wellington_before_footer' ); ?>

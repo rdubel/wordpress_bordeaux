@@ -189,7 +189,6 @@ function wellington_google_fonts_url() {
 	return apply_filters( 'wellington_google_fonts_url', $fonts_url );
 }
 
-
 /**
  * Add custom sizes for featured images
  */

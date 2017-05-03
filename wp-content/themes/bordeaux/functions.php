@@ -33,4 +33,3 @@ function bordeaux_widgets_init() {
 
 }
 add_action( 'widgets_init', 'bordeaux_widgets_init' );
-?>

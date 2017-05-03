@@ -25,8 +25,6 @@
 
 	<div id="page" class="hfeed site">
 
-		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wellington' ); ?></a>
-
 		<header id="masthead" class="site-header clearfix" role="banner">
 
 			<div class="header-main container clearfix">
@@ -34,7 +32,6 @@
 				<div id="logo" class="site-branding clearfix">
 
 					<?php wellington_site_title(); ?>
-					<?php wellington_site_description(); ?>
 
 				</div><!-- .site-branding -->
 
@@ -54,12 +51,12 @@
 			<div id="main-navigation-wrap" class="primary-navigation-wrap">
 
 				<nav id="main-navigation" class="primary-navigation navigation container clearfix" role="navigation">
-                    <?php wellington_site_logo(); ?>
 					<?php
 						// Display Main Navigation.
 						wp_nav_menu( array(
 							'theme_location' => 'primary',
 							'container' => false,
+                            'before' => wellington_site_logo(),
 							'menu_class' => 'main-navigation-menu',
 							'echo' => true,
 							'fallback_cb' => 'wellington_default_menu',
