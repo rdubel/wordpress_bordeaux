@@ -18,4 +18,9 @@ Text Domain:  wellington-child
     width: 100%;
     height: 1.6em; }
 
+.textwidget a,
+.textwidget a:link,
+.textwidget a:visited {
+  color: black; }
+
 /*# sourceMappingURL=style.css.map */
