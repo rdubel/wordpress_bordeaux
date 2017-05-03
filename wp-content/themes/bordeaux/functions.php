@@ -10,4 +10,27 @@ function test_enqueue_styles() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'test_enqueue_styles' );
+
+function bordeaux_widgets_init() {
+    register_sidebar( array(
+        'name' => 'Footer Sidebar 1',
+        'id' => 'footer-sidebar-1',
+        'description' => 'Appears in the footer area',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name' => 'Footer Sidebar 2',
+        'id' => 'footer-sidebar-2',
+        'description' => 'Appears in the footer area',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+
+}
+add_action( 'widgets_init', 'bordeaux_widgets_init' );
 ?>

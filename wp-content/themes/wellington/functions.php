@@ -131,7 +131,6 @@ function wellington_widgets_init() {
 		'before_title' => '<div class="widget-header"><h3 class="widget-title">',
 		'after_title' => '</h3></div>',
 	));
-
 }
 add_action( 'widgets_init', 'wellington_widgets_init' );
 
