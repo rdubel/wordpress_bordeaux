@@ -44,4 +44,12 @@ Text Domain:  wellington-child
   color: black;
   left: 5; }
 
+.footer-wrap {
+  background: #ebebeb none repeat scroll 0 0; }
+  .footer-wrap .site-footer ul li {
+    list-style: none; }
+    .footer-wrap .site-footer ul li a:link, .footer-wrap .site-footer ul li .site-footer a:visited {
+      color: black;
+      text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */
