@@ -113,6 +113,7 @@ Text Domain:  wellington-child
 
 #main {
   margin-bottom: 2em;
+  padding-right: 2em;
   border-right: 1px solid lightgrey; }
 
 .widget ul .sub-menu {
@@ -155,5 +156,8 @@ Text Domain:  wellington-child
   width: 100%; }
   #footer-text a, #footer-text a:visited {
     color: black; }
+
+.heateor_sss_vertical_sharing, .heateor_sss_sharing_container {
+  padding: 3px 0 0 5px !important; }
 
 /*# sourceMappingURL=style.css.map */

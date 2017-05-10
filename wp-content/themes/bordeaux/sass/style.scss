@@ -142,6 +142,7 @@ Text Domain:  wellington-child
 
 #main {
     margin-bottom: 2em;
+    padding-right: 2em;
     border-right: 1px solid lightgrey;
 }
 
@@ -194,4 +195,8 @@ Text Domain:  wellington-child
     a, a:visited {
         color: black;
     }
+}
+
+.heateor_sss_vertical_sharing, .heateor_sss_sharing_container {
+    padding: 3px 0 0 5px !important;
 }
