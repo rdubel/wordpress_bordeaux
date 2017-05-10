@@ -32,54 +32,27 @@ get_header(); ?>
             <div id="post-wrapper" class="post-wrapper clearfix">
 
 				<?php
-                // $categories = get_categories( array( 'orderby' => 'name', 'order' => 'ASC' ) );
-                // foreach( $categories as $category ) {
-                //     echo '<h2>'.$category->name.'</h2>';
-                //         $args = array( 'posts_per_page' => -1, 'order'=> 'ASC', 'orderby' => 'title', 'category' => $category->cat_ID );
-                //         $postslist = get_posts( $args );
-                //             foreach ( $postslist as $post ) :
-                //                 setup_postdata( $post );
-                //                 // if ( is_user_logged_in() ) {
-                //                     edit_post_link();
-                $args = array(
-                    'order' => 'date',
-                    'posts_per_page'   => 1
-                );
-                $firstpost = get_posts($args);
-                foreach ($firstpost as $post ) {
+                $my_query = new WP_Query('showposts=1');
+                while ( $my_query->have_posts() ) : $my_query->the_post();
                     $do_not_duplicate = $post->ID;
-                    setup_postdata( $firstpost );
                     get_template_part( 'template-parts/content' );
-                }
-
-
-                // $my_query = new WP_Query('showposts=1');
-                // while ( $my_query->have_posts() ) : $my_query->the_post();
-                //     $do_not_duplicate = $post->ID;
-                //     get_template_part( 'template-parts/content' );
-                // endwhile;
+                endwhile;
                 ?>
             </div>
             <h3>ACTUALITES</h3>
             <div id="post-wrapper2" class="post-wrapper clearfix">
                 <?php
-                $args = array(
-                    'order' => 'date',
-                    'posts_per_page' => 4,
-                    'category_name' => 'actualites'
-                );
-                    $secposts = get_posts($args);;
-                        foreach($secposts as $post):
-                            setup_postdata( $secposts );
-
+                    query_posts('showposts=4');
+                        while ( have_posts() ) : the_post();
                             if ( $post->ID != $do_not_duplicate && 'post' === get_post_type() ) :
                                 get_template_part( 'template-parts/content' );
                             endif;
-                        endforeach; ?>
+                        endwhile; ?>
 
     			</div>
 
-    			<?php wellington_pagination(); ?>
+                	<iframe src="//v.calameo.com/library/?type=account&id=1480121&rows=1&sortBy=latestIssue&theme=any&bgColor=ebebeb&thumbSize=normal&showTitle=false&showShadow=true&showGloss=false&showInfo=no&linkTo=embed" height="185" width="100%" frameborder="0" allowfullscreen allowtransparency></iframe>
+                    
 
 		<?php
 		else :
