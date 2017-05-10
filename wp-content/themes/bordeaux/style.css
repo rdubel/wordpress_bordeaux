@@ -11,6 +11,18 @@ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 Tags:         wellington child
 Text Domain:  wellington-child
 */
+.site {
+  margin: auto;
+  background: none;
+  box-shadow: none; }
+
+.primary-navigation-wrap {
+  background: none; }
+
+.sidebar {
+  border-left: none;
+  background: none; }
+
 .header-main {
   display: flex;
   align-items: flex-end;
@@ -79,7 +91,7 @@ Text Domain:  wellington-child
     list-style-type: none; }
     #nav_menu-3 ul li {
       margin: 0 0.1em;
-      padding: 0 0.2em; }
+      padding: 0 0.2em 0 0; }
     #nav_menu-3 ul li:not(:nth-child(3)) {
       border-right: 1px solid #343434; }
 
@@ -87,8 +99,53 @@ Text Domain:  wellington-child
   background: #ebebeb none repeat scroll 0 0; }
   .footer-wrap .site-footer ul li {
     list-style: none; }
-    .footer-wrap .site-footer ul li a:link, .footer-wrap .site-footer ul li .site-footer a:visited {
+    .footer-wrap .site-footer ul li a:link, .footer-wrap .site-footer ul li .site-footer, .footer-wrap .site-footer ul li a:visited {
       color: black;
       text-decoration: none; }
+    .footer-wrap .site-footer ul li a:hover {
+      text-decoration: underline; }
+
+#primary {
+  padding-right: 0; }
+
+#main {
+  margin-bottom: 2em;
+  border-right: 1px solid lightgrey; }
+
+.widget ul .sub-menu {
+  margin: 0; }
+
+#colophon {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  #colophon #nav_menu-6 {
+    width: 65%; }
+  #colophon #menu-menu-2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: baseline; }
+    #colophon #menu-menu-2 .menu-item-has-children {
+      margin-bottom: 2em;
+      max-width: 29%; }
+      #colophon #menu-menu-2 .menu-item-has-children > a {
+        font-weight: bold; }
+  #colophon #text-7 {
+    padding-left: 1em;
+    width: 35%; }
+    #colophon #text-7 p {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto; }
+    #colophon #text-7 h3 {
+      width: 85%;
+      margin: auto; }
+  #colophon #footer-text {
+    color: black;
+    width: 100%; }
+    #colophon #footer-text a, #colophon #footer-text a:visited {
+      color: black; }
 
 /*# sourceMappingURL=style.css.map */
