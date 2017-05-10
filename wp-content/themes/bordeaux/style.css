@@ -47,6 +47,9 @@ Text Domain:  wellington-child
     font-size: 1.2em;
     font-weight: bold; }
 
+.textwidget a:link, .textwidget a:visited {
+  color: black; }
+
 #nav_menu-4 {
   float: left;
   margin-top: 7.7em;
@@ -83,12 +86,15 @@ Text Domain:  wellington-child
     #nav_menu-3 ul li:not(:nth-child(3)) {
       border-right: 1px solid #343434; }
 
-.footer-wrap {
+#search-4 .footer-wrap {
   background: #ebebeb none repeat scroll 0 0; }
-  .footer-wrap .site-footer ul li {
+  #search-4 .footer-wrap .site-footer ul li {
     list-style: none; }
-    .footer-wrap .site-footer ul li a:link, .footer-wrap .site-footer ul li .site-footer a:visited {
+    #search-4 .footer-wrap .site-footer ul li a:link, #search-4 .footer-wrap .site-footer ul li .site-footer a:visited {
       color: black;
       text-decoration: none; }
+
+#post-wrapper2 {
+  display: flex; }
 
 /*# sourceMappingURL=style.css.map */
