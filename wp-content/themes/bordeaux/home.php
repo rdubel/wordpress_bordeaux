@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<section id="primary" class="content-archive content-area">
 		<main id="main" class="site-main" role="main">
-
+                <p>test !</p>
 		<?php
 		// Display Magazine Homepage Widgets.
 		if ( ! is_paged() && is_active_sidebar( 'magazine-homepage' ) ) : ?>
