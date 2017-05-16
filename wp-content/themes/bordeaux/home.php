@@ -59,8 +59,8 @@ get_header(); ?>
                 <?php
                 $args = array(
                     'orderby' => 'date',
-                    'posts_per_page' => 4,
-                    'category' => 'actualites'
+                    'posts_per_page' => 6,
+                    'category_name' => 'actualites'
                 );
                 $secposts = get_posts($args);
                 foreach ($secposts as $post) {
@@ -78,10 +78,22 @@ get_header(); ?>
                 <div class="middle">
                     <div class="video">
                         <h3>VIDEOS</h3>
-                        <iframe id="dm_jukebox_iframe" allowfullscreen="true" allowtransparency="true" style="overflow:hidden; margin:0; padding:0; width: 100%; height: 302px;" marginwidth="0" marginheight="0" src="http://www.dailymotion.com/widget/jukebox?list[]=%2Fplaylist%2Fx2a4hy_villedebordeaux_a-la-une%2F1&&autoplay=0&mute=0" width="100%" frameborder="0" align="middle">
+                        <iframe id="dm_jukebox_iframe" allowfullscreen="true" allowtransparency="true" style="overflow:hidden; margin:0; padding:0; width: 100%; height: 302px;" marginwidth="0" marginheight="0" src="http://www.dailymotion.com/widget/jukebox?list[]=%2Fplaylist%2Fx2a4hy_villedebordeaux_a-la-une%2F1&&autoplay=0&mute=0" width="100%" frameborder="0" align="middle"></iframe>
                     </div>
                     <div class="politique">
-
+                        <h3>POLITIQUE</h3>
+                        <?php
+                        $args = array(
+                            'orderby' => 'date',
+                            'posts_per_page' => 2,
+                            'category_name' => 'politique'
+                        );
+                        $politiqueposts = get_posts($args);
+                        foreach ($politiqueposts as $post) {
+                            setup_postdata( $post );
+                                get_template_part( 'template-parts/content' );
+                        }
+                            ?>
                     </div>
                 </div>
 
